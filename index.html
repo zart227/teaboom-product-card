@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ананасовый улун — карточка товара | Чайный Бум</title>
+  <meta name="description" content="Тестовая вёрстка карточки товара Teaboom.ru: Ананасовый улун.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="https://teaboom.ru/">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="https://teaboom.ru/catalog">Чай</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="https://teaboom.ru/catalog">Улун ароматизированный</a></li>
+        <li class="breadcrumbs__item" aria-current="page">Ананасовый улун</li>
+      </ol>
+    </nav>
+
+    <article class="product" aria-labelledby="product-title">
+      <figure class="product__gallery">
+        <span class="product__badge">Скидка</span>
+        <img class="product__image" src="img/ananasovij-ulun.jpg" width="800" height="800"
+             alt="Ананасовый улун: крупный скрученный лист изумрудного цвета с кусочками цукатов">
+      </figure>
+
+      <div class="product__info">
+        <p class="product__category">Улун ароматизированный</p>
+        <h1 class="product__title" id="product-title">Ананасовый улун</h1>
+        <p class="product__sku">Артикул: <span data-sku>01306</span></p>
+
+        <form class="product__form" action="#" data-product-form>
+          <fieldset class="packing">
+            <legend class="packing__legend">Фасовка</legend>
+            <div class="packing__options">
+              <label class="packing__option">
+                <input class="packing__input" type="radio" name="packing" value="100" checked
+                       data-sku="01306" data-price="326.40" data-old-price="349.20">
+                <span class="packing__label">100 г</span>
+              </label>
+              <label class="packing__option">
+                <input class="packing__input" type="radio" name="packing" value="500"
+                       data-sku="01307" data-price="1432" data-old-price="1646">
+                <span class="packing__label">500 г</span>
+              </label>
+              <label class="packing__option">
+                <input class="packing__input" type="radio" name="packing" value="1000"
+                       data-sku="01308" data-price="2064" data-old-price="2592">
+                <span class="packing__label">1000 г</span>
+              </label>
+              <label class="packing__option">
+                <input class="packing__input" type="radio" name="packing" value="5000"
+                       data-sku="01309" data-price="6320" data-old-price="8710">
+                <span class="packing__label">5000 г</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="product__buy">
+            <p class="price" aria-live="polite">
+              <span class="visually-hidden">Цена:</span>
+              <span class="price__current" data-price>326,40&nbsp;₽</span>
+              <span class="visually-hidden">Старая цена:</span>
+              <s class="price__old" data-old-price>349,20&nbsp;₽</s>
+              <span class="price__discount" data-discount>−7%</span>
+            </p>
+            <button class="button" type="submit">В корзину</button>
+          </div>
+          <p class="product__added" role="status" data-status></p>
+        </form>
+
+        <section class="product__description" aria-labelledby="description-title">
+          <h2 class="product__subtitle" id="description-title">Описание</h2>
+          <p><b>Состав:</b> китайский бирюзовый чай, цукаты, натуральные ароматические масла.</p>
+          <p>Светлый Фуцзяньский улун с ароматом ананаса. В сухом виде — красивый крупный лист изумрудного цвета, скруткой листа напоминающий Те Гуань Инь. В прогретой посуде аромат свежей, весенней зелени и спелого ананаса. Скрученный лист медленно раскрывается, отдавая весь свой аромат.</p>
+        </section>
+      </div>
+    </article>
+  </main>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
