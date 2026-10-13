@@ -1,0 +1,10 @@
+@use "variables" as *;
+
+@mixin from($bp) {
+  @media (min-width: $bp) { @content; }
+}
+
+@mixin focus-ring {
+  outline: 2px solid $color-primary;
+  outline-offset: 2px;
+}
